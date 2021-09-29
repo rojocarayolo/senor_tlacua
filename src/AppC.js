@@ -1,27 +1,34 @@
 import React, {useState} from "react";
-import { Box, Button, Collapsible, Grommet, ResponsiveContext, Carousel,
-  Video, Heading, TextInput,} from 'grommet';
-import {Search,} from 'grommet-icons';
+import {
+  Box,
+  Button,
+  Collapsible,
+  Grommet,
+  ResponsiveContext,
+  Carousel,
+  Video,
+  Heading,
+  TextInput
+  } from 'grommet';
+import {Search} from 'grommet-icons';
 
 import video from './multimedia/tlacuache_spot_2.mp4';
 import video2 from './multimedia/video-disco.mp4'
 
-import Shopcart from "./Shopcart";
-import ShopcartS from "./ShopcartS";
+//import shopcart from "./shopcart";
+//import shopcartS from "./shopcartS";
 
-import Categories from "./Categories"
-import CategoriesS from "./CategoriesS"
+import categories from "./Categories"
+import categoriesS from "./CategoriesS"
 
-import Cards from "./Cards"
-import CardsS from "./CardsS"
+import cards from "./cards"
+import cardsS from "./CardsS"
 
-import Headers from "./Header";
-import HeaderS from "./HeadreS";
+//import headers from "./header";
+//import headerS from "./headreS";
 
-import Footers from "./Footer";
-import FooterS from "./FooterS";
-
-//import yute from "./multimedia/fondo-yute-cafe.jpg"
+import footers from "./Footer";
+import footerS from "./FooterS";
 
 const theme = {
   colors: {
@@ -29,7 +36,7 @@ const theme = {
        },
   global: {
     font: {
-      family: 'oswald',
+      family: 'Roboto',
       size: '18px',
       height: '20px',
     },
@@ -43,32 +50,27 @@ const backprp ={
 //const texti={color: '#f2c900'}
 
 function App() {
-  const [showSidebar, setShowSidebar] = useState(false);
-  const [showSearch, setShowSearch] = useState(false);
+  const [showSidebar] = useState(false);
+  const [showSearch] = useState(false);
   return (
     <Grommet theme={theme} full background={backprp}>
       <ResponsiveContext.Consumer>
         {size => (
           <Box>
-            {(size!=='small')?(
-              <Headers 
-                setSS={setShowSidebar}
-                setSS2={setShowSearch}
-                Searchs={showSearch} 
-                Sidebars={showSidebar}
-              />
-              ):(
-              <HeaderS
-                setSS={setShowSidebar}
-                setSS2={setShowSearch}
-                Searchs={showSearch} 
-                Sidebars={showSidebar}
-              />)}
+            
+            ///////////////Header////////////////////////
+            {(size !== 'small')?(<headers/>):(<headerS/>)}
+            /////////////////////////////////////
             <Box direction="row">
               <Box>
                 <Collapsible  open={showSearch}>
-                  <Box background="#00637c" pad="medium">
-                    <TextInput placeholder="Busca algun producto" icon={<Search/>}/>
+                  <Box
+                    background="#00637c"
+                    pad="medium"
+                  >
+                    <TextInput placeholder="Busca algun producto" icon={<Search/>} 
+                      //theme={texti}
+                    />
                     <br/> 
                     <Button primary label="Buscar" color="#f2c900"/>
                   </Box>
@@ -81,7 +83,9 @@ function App() {
                       <source key="video" src={video2} type="video/mp4"/>    
                   </Video>
                 </Carousel>
-                {(size!=='small')?(<Cards/>):(<CardsS/>)}
+                ////////////////Cards//////////////////
+                {(size !== 'small')?(<cards/>):(<cardsS/>)}
+                ///////////////////////////////////////////////////////////
                 {(size === 'small')?(
                   <Box align="center">
                     <Heading color="#004D75" level="2">Conoce nuestros productos</Heading>
@@ -91,14 +95,17 @@ function App() {
                     <Heading color="#004D75">Conoce nuestros productos</Heading>
                   </Box>
                 )}
-                {(size!=='small')?(<Categories/>):(<CategoriesS/>)}    
+                ////////////////////////categories///////////////
+                {(size !== 'small')?(<categories/>):(<categoriesS/>)}
+                /////////////////////////////////////////////                
               </Box>
-              {(!showSidebar || size !== 'small')
-                ?(<Shopcart Sidebars={showSidebar}/>)
-                :(<ShopcartS setSS={setShowSidebar}/>)
-              }   
+              ////////Shoping Cart////////
+              {(!showSidebar || size !== 'small')?(<shopcart/>):(<shopcartS/>)}
+              ////////////////////////////////////  
             </Box>
-            {(size!=='small')?(<Footers/>):(<FooterS/>)}        
+            ////////Footer////////
+            {(size !== 'small')?(<footers/>):(<footerS/>)}
+            ////////////////////////////////////      
           </Box>   
         )}
       </ResponsiveContext.Consumer>
