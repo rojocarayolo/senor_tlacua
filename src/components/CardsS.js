@@ -1,7 +1,7 @@
 import React from "react";
 import { Box, Heading, Card, CardHeader, CardBody, Paragraph, Text, Image } from 'grommet';
-import patio from './multimedia/patio.jpeg';
-import vista from './multimedia/vista.jpeg';
+import patio from '../multimedia/patio.jpeg';
+import vista from '../multimedia/vista.jpeg';
 
 const missionHead= "Con tu ayuda podemos hacer un mundo más sustentable y comprometido con los recursos producidos y su reciclaje.";
 const misssionBody= "Nos mueve el respeto y la responsabilidad por nuestro entorno, por ese motivo reunimos para ti antigüedades y objetos que te permitan revivir el pasado y darle una nueva perspectiva al ahora. Nuestro espacio reúne una selecta colección de artesanías, manualidades y productos de segunda mano que serán reutilizados, con la finalidad de dar un toque alternativo e innovador a la decoración de hogares y establecimientos comerciales de nuestra región y de todo el país.";

@@ -1,7 +1,7 @@
 import React from "react";
 import { Box, Image, Text, Footer, Anchor, Paragraph} from 'grommet';
 import { Facebook, Instagram,Notes} from 'grommet-icons';
-import cuca from './multimedia/LOGO-HORIZONTAL-1-416x63.png';
+import cuca from '../multimedia/LOGO-HORIZONTAL-1-416x63.png';
 
 function footer(){
   return(

@@ -1,11 +1,11 @@
 import React from "react";
 import { Box, Image, Heading, Text, Anchor } from 'grommet';
-import mate7 from './multimedia/text001-100x100.jpg';
-import mate8 from './multimedia/text002-100x100.jpg';
-import mate9 from './multimedia/text003-100x100.jpg';
-import mate10 from './multimedia/text004-100x100.jpg';
-import mate11 from './multimedia/text005-100x100.jpg';
-import mate12 from './multimedia/text006-100x100.jpg';
+import mate7 from '../multimedia/text001-100x100.jpg';
+import mate8 from '../multimedia/text002-100x100.jpg';
+import mate9 from '../multimedia/text003-100x100.jpg';
+import mate10 from '../multimedia/text004-100x100.jpg';
+import mate11 from '../multimedia/text005-100x100.jpg';
+import mate12 from '../multimedia/text006-100x100.jpg';
 
 function CategoriesS(){
     return(

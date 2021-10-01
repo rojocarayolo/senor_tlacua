@@ -1,11 +1,11 @@
 import React from "react";
 import { Box, Image, Heading, Text, Anchor } from 'grommet';
-import mate1 from './multimedia/text001-150x150.jpg';
-import mate2 from './multimedia/text002-150x150.jpg';
-import mate3 from './multimedia/text003-150x150.jpg';
-import mate4 from './multimedia/text004-150x150.jpg';
-import mate5 from './multimedia/text005-150x150.jpg';
-import mate6 from './multimedia/text006-150x150.jpg';
+import mate1 from '../multimedia/text001-150x150.jpg';
+import mate2 from '../multimedia/text002-150x150.jpg';
+import mate3 from '../multimedia/text003-150x150.jpg';
+import mate4 from '../multimedia/text004-150x150.jpg';
+import mate5 from '../multimedia/text005-150x150.jpg';
+import mate6 from '../multimedia/text006-150x150.jpg';
 
 function categories(){
     return(

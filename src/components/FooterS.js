@@ -1,7 +1,7 @@
 import React from "react";
 import { Box, Image, Text, Footer, Anchor} from 'grommet';
 import { Facebook, Instagram,Notes} from 'grommet-icons';
-import cuca2 from './multimedia/logo-tlacuache_Mesa-de-trabajo-1.png';
+import cuca2 from '../multimedia/logo-tlacuache_Mesa-de-trabajo-1.png';
 
 function footerS(){
   return(

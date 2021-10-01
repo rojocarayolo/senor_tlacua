@@ -1,25 +1,16 @@
 import React, {useState} from "react";
-import { Box, Button, Collapsible, Grommet, ResponsiveContext, Carousel,
-  Video, Heading, TextInput,} from 'grommet';
+import { Box, Grommet, ResponsiveContext, Collapsible, TextInput, Button} from 'grommet';
 import {Search,} from 'grommet-icons';
+import Rutas from "./Rutas";
 
-import video from './multimedia/tlacuache_spot_2.mp4';
-import video2 from './multimedia/video-disco.mp4'
+import Shopcart from "./components/Shopcart";
+import ShopcartS from "./components/ShopcartS";
 
-import Shopcart from "./Shopcart";
-import ShopcartS from "./ShopcartS";
+import Headers from "./components/Header";
+import HeaderS from "./components/HeadreS";
 
-import Categories from "./Categories"
-import CategoriesS from "./CategoriesS"
-
-import Cards from "./Cards"
-import CardsS from "./CardsS"
-
-import Headers from "./Header";
-import HeaderS from "./HeadreS";
-
-import Footers from "./Footer";
-import FooterS from "./FooterS";
+import Footers from "./components/Footer";
+import FooterS from "./components/FooterS";
 
 //import yute from "./multimedia/fondo-yute-cafe.jpg"
 
@@ -73,25 +64,7 @@ function App() {
                     <Button primary label="Buscar" color="#f2c900"/>
                   </Box>
                 </Collapsible>
-                <Carousel play="45000">
-                  <Video controls="false" autoPlay loop mute>
-                      <source key="video" src={video} type="video/mp4"/>    
-                  </Video>
-                  <Video controls="false" autoPlay loop mute>
-                      <source key="video" src={video2} type="video/mp4"/>    
-                  </Video>
-                </Carousel>
-                {(size!=='small')?(<Cards/>):(<CardsS/>)}
-                {(size === 'small')?(
-                  <Box align="center">
-                    <Heading color="#004D75" level="2">Conoce nuestros productos</Heading>
-                  </Box>
-                ):(
-                  <Box align="center">
-                    <Heading color="#004D75">Conoce nuestros productos</Heading>
-                  </Box>
-                )}
-                {(size!=='small')?(<Categories/>):(<CategoriesS/>)}    
+                <Rutas/>
               </Box>
               {(!showSidebar || size !== 'small')
                 ?(<Shopcart Sidebars={showSidebar}/>)

@@ -1,7 +1,7 @@
 import React from "react";
 import { Button, Header, Image, Anchor} from 'grommet';
 import {Shop, Cart, Home, Search} from 'grommet-icons';
-import spot2 from './multimedia/image4229.png';
+import spot2 from '../multimedia/image4229.png';
 
 function HeaderS(props){
   return(

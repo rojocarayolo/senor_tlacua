@@ -1,7 +1,7 @@
 import React from "react";
 import { Button, Header, Image, Anchor} from 'grommet';
 import {Cart, Search} from 'grommet-icons';
-import spot from './multimedia/LOGO-HORIZONTAL-1-768x117.png';
+import spot from '../multimedia/LOGO-HORIZONTAL-1-768x117.png';
 
 function Headers(props){
   
@@ -13,8 +13,8 @@ function Headers(props){
         //fallback='//github.com/rojocarayolo/covid_y_tu/blob/Box/LOGO-HORIZONTAL-1-768x117.png?raw=true'
       />
     </Anchor>
-    <Anchor size="large" color="ligth-1">Inicio</Anchor>
-    <Anchor size="large" color="ligth-1">Tienda</Anchor>
+    <Anchor size="large" color="ligth-1" href="./" reverse="true">Inicio</Anchor>
+    <Anchor size="large" color="ligth-1" href="./Tienda" >Tienda</Anchor>
     <Button 
       icon={<Search/>} 
       onClick={() => props.setSS2(!props.Searchs)}
