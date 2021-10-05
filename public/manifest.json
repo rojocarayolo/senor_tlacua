@@ -8,14 +8,14 @@
       "type": "image/x-icon"
     },
     {
-      "src": "logo192.png",
-      "type": "image/png",
-      "sizes": "192x192"
+      "src": "cropped-aco0393mmh_yute-100x100.jpg",
+      "type": "image/jpg",
+      "sizes": "100x100"
     },
     {
-      "src": "logo512.png",
-      "type": "image/png",
-      "sizes": "512x512"
+      "src": "cropped-aco0393mmh_yute-150x150.jpg",
+      "type": "image/jpg",
+      "sizes": "150x150"
     }
   ],
   "start_url": ".",

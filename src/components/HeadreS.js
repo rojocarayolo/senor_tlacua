@@ -6,15 +6,15 @@ import spot2 from '../multimedia/image4229.png';
 function HeaderS(props){
   return(
     <Header pad="xsmall" background= "#007c9b">
-        <Anchor>
+        <Anchor href="./">
           <Image
             src={spot2}
             //fallback='//github.com/rojocarayolo/covid_y_tu/blob/Box/LOGO-HORIZONTAL-1-768x117.png?raw=true'
           />
         </Anchor>  
         
-        <Anchor icon={<Home/>} color="#ffff"/>
-        <Anchor icon={<Shop/>} color="#ffff"/>
+        <Anchor icon={<Home/>} color="#ffff" href="./"/>
+        <Anchor icon={<Shop/>} color="#ffff" href="./Tienda"/>
         <Button 
           icon={<Search/>} 
           onClick={() => props.setSS2(!props.Searchs)}

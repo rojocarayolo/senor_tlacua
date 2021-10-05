@@ -48,14 +48,15 @@ function App() {
                 Searchs={showSearch} 
                 Sidebars={showSidebar}
               />
-              ):(
+            ):(
               <HeaderS
                 setSS={setShowSidebar}
                 setSS2={setShowSearch}
                 Searchs={showSearch} 
                 Sidebars={showSidebar}
-              />)}
-            <Box direction="row">
+              />
+            )}
+            <Box direction="row-responsive">
               <Box>
                 <Collapsible  open={showSearch}>
                   <Box background="#00637c" pad="medium">

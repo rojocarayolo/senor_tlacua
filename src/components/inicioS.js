@@ -10,7 +10,7 @@ import Categories from "./Categories";
 
 import Cards from "./Cards";
 
-function Inicio(props){
+function InicioS(props){
     return(
         <Box>
             <Collapsible  open={props.search}>
@@ -40,4 +40,4 @@ function Inicio(props){
     
 }
 
-export default Inicio
+export default InicioS
