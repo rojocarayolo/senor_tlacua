@@ -22,7 +22,7 @@ function ShopC() {
             <Box direction="row">
                 <Box pad="medium" width="medium" align="center">
                     <Box height="small">
-                        <Image fill="true" src={batea1} />
+                        <Image fit="over" src={batea1} />
                     </Box>
                     <Heading level="2" color="light-1">Batea</Heading>
                     <Button
@@ -38,7 +38,7 @@ function ShopC() {
                 </Box>
                 <Box pad="medium" width="medium" align="center">
                     <Box height="small">
-                        <Image fill="true" src={batea2} />
+                        <Image fit="over" src={batea2} />
                     </Box>
                     <Heading level="2" color="light-1">Batea</Heading>
                     <Button
@@ -49,9 +49,11 @@ function ShopC() {
 
                     <Button primary label="Agregar al carrito" color='#f2c900' />
                 </Box>
+            </Box>
+            <Box direction="row">
                 <Box pad="medium" width="medium" align="center">
                     <Box height="small">
-                        <Image fill="true" src={batea3} />
+                        <Image fit="over" src={batea3} />
                     </Box>
                     <Heading level="2" color="light-1">Batea</Heading>
 
@@ -65,7 +67,7 @@ function ShopC() {
                 </Box>
                 <Box pad="medium" width="medium" align="center">
                     <Box height="small">
-                        <Image fill="true" src={batea4} />
+                        <Image fit="over" src={batea4} />
                     </Box>
                     <Heading level="2" color="light-1">Batea</Heading>
                     <Button
@@ -79,7 +81,7 @@ function ShopC() {
             <Box direction="row">
                 <Box pad="medium" width="medium" align="center">
                     <Box height="small">
-                        <Image fill="true" src={batea5} />
+                        <Image fit="over" src={batea5} />
                     </Box>
                     <Heading level="2" color="light-1">Batea</Heading>
                     <Button
@@ -91,31 +93,7 @@ function ShopC() {
                 </Box>
                 <Box pad="medium" width="medium" align="center">
                     <Box height="small">
-                        <Image fill="true" src={batea6} />
-                    </Box>
-                    <Heading level="2" color="light-1">Batea</Heading>
-                    <Button
-                        icon={<CircleInformation />}
-                        onClick={() => setShow(!show)}
-                        hoverIndicator
-                    />
-                    <Button primary label="Agregar al carrito" color='#f2c900' />
-                </Box>
-                <Box pad="medium" width="medium" align="center">
-                    <Box height="small">
-                        <Image fill="true" src={batea7} />
-                    </Box>
-                    <Heading level="2" color="light-1">Batea</Heading>
-                    <Button
-                        icon={<CircleInformation />}
-                        onClick={() => setShow(!show)}
-                        hoverIndicator
-                    />
-                    <Button primary label="Agregar al carrito" color='#f2c900' />
-                </Box>
-                <Box pad="medium" width="medium" align="center">
-                    <Box height="small">
-                        <Image fill="true" src={batea8} />
+                        <Image fit="over" src={batea6} />
                     </Box>
                     <Heading level="2" color="light-1">Batea</Heading>
                     <Button
@@ -129,7 +107,7 @@ function ShopC() {
             <Box direction="row">
                 <Box pad="medium" width="medium" align="center">
                     <Box height="small">
-                        <Image fill="true" src={batea9} />
+                        <Image fit="over" src={batea7} />
                     </Box>
                     <Heading level="2" color="light-1">Batea</Heading>
                     <Button
@@ -141,7 +119,21 @@ function ShopC() {
                 </Box>
                 <Box pad="medium" width="medium" align="center">
                     <Box height="small">
-                        <Image fill="true" src={batea10} />
+                        <Image fit="over" src={batea8} />
+                    </Box>
+                    <Heading level="2" color="light-1">Batea</Heading>
+                    <Button
+                        icon={<CircleInformation />}
+                        onClick={() => setShow(!show)}
+                        hoverIndicator
+                    />
+                    <Button primary label="Agregar al carrito" color='#f2c900' />
+                </Box>
+            </Box>
+            <Box direction="row">
+                <Box pad="medium" width="medium" align="center">
+                    <Box height="small">
+                        <Image fit="over" src={batea9} />
                     </Box>
                     <Heading level="2" color="light-1">Batea</Heading>
                     <Button
@@ -153,7 +145,21 @@ function ShopC() {
                 </Box>
                 <Box pad="medium" width="medium" align="center">
                     <Box height="small">
-                        <Image fill="true" src={batea11} />
+                        <Image fit="over" src={batea10} />
+                    </Box>
+                    <Heading level="2" color="light-1">Batea</Heading>
+                    <Button
+                        icon={<CircleInformation />}
+                        onClick={() => setShow(!show)}
+                        hoverIndicator
+                    />
+                    <Button primary label="Agregar al carrito" color='#f2c900' />
+                </Box>
+            </Box>
+            <Box direction="row">
+                <Box pad="medium" width="medium" align="center">
+                    <Box height="small">
+                        <Image fit="over" src={batea11} />
                     </Box>
                     <Heading level="2" color="light-1">Batea</Heading>
                     <Button
@@ -165,7 +171,7 @@ function ShopC() {
                 </Box>
                 <Box pad="medium" width="medium" align="center">
                     <Box height="small">
-                        <Image fill="true" src={batea12} />
+                        <Image fit="over" src={batea12} />
                     </Box>
                     <Heading level="2" color="light-1">Batea</Heading>
                     <Button
